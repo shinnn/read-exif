@@ -1,0 +1,48 @@
+{
+	"name": "read-exif",
+	"version": "1.0.0",
+	"description": "Get Exif data from a JPEG file without reading whole contents",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"repository": "shinnn/read-exif",
+	"license": "ISC",
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "nyc node test.js"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"exif",
+		"information",
+		"data",
+		"meta",
+		"metadata",
+		"extract",
+		"read",
+		"parse",
+		"jpg",
+		"jpeg",
+		"photo",
+		"picture",
+		"image"
+	],
+	"dependencies": {
+		"get-exif": "^1.0.2"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config": "^6.9.2",
+		"eslint": "^5.15.3",
+		"nyc": "^13.3.0",
+		"nyc-config-common": "^1.0.1",
+		"piexifjs": "^2.0.0-beta.7",
+		"smallest-jpeg": "^2.0.0",
+		"tape": "^4.10.1"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn"
+	},
+	"nyc": {
+		"extends": "nyc-config-common"
+	}
+}
